@@ -1,5 +1,6 @@
 FROM nginx:alpine
 COPY index.html /usr/share/nginx/html
+COPY site.webmanifest /usr/share/nginx/html
+COPY browserconfig.xml /usr/share/nginx/html
 COPY css /usr/share/nginx/html/css
-COPY bg.jpg /usr/share/nginx/html
-COPY logo.png /usr/share/nginx/html
+COPY img /usr/share/nginx/img
